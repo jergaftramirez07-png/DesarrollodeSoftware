@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#060e1d">
+  <meta name="description" content="Página tributo a Moisés Caicedo, mediocampista estrella de la Selección de Ecuador y Chelsea FC. Conoce su biografía, trayectoria, logros y estadísticas.">
+  <title>Moisés Caicedo | Orgullo Tricolor y Motor del Chelsea FC</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='16' fill='%23034694'/%3E%3Ctext x='16' y='21' font-size='14' font-weight='bold' text-anchor='middle' fill='%23ffd100' font-family='sans-serif'%3E25%3C/text%3E%3C/svg%3E" type="image/svg+xml">
+  <!-- Conexión anticipada y fuentes de Google Fonts (reemplaza @import bloqueante) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Enlace accesible para saltar directamente al contenido principal (WCAG 2.4.1) -->
+  <a href="#contenido-principal" class="skip-link">Saltar al contenido principal</a>
+
+  <!-- Navegación principal -->
+  <header class="main-header">
+    <div class="nav-container">
+      <a href="#inicio" class="logo" aria-label="Ir al inicio - Moisés Caicedo número 25">
+        <span class="flag-stripe yellow" aria-hidden="true"></span>
+        <span class="flag-stripe blue" aria-hidden="true"></span>
+        <span class="flag-stripe red" aria-hidden="true"></span>
+        <span class="logo-text">Moisés <strong>Caicedo</strong> <span class="badge-number">#25</span></span>
+      </a>
+
+      <!-- Botón accesible de menú móvil (sin dependencias ni frameworks) -->
+      <button type="button" class="nav-toggle" aria-controls="primary-navigation" aria-expanded="false" aria-label="Abrir menú de navegación">
+        <span class="hamburger-box" aria-hidden="true">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+
+      <nav id="primary-navigation" class="nav-menu" aria-label="Navegación del sitio">
+        <ul class="nav-links">
+          <li><a href="#biografia">Biografía</a></li>
+          <li><a href="#trayectoria">Trayectoria</a></li>
+          <li><a href="#logros">Logros</a></li>
+          <li><a href="#estadisticas">Estadísticas</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="inicio" class="hero-section">
+    <div class="hero-container">
+      <div class="hero-text-content">
+        <div class="hero-tags">
+          <span class="tag tag-chelsea">Chelsea FC #25</span>
+          <span class="tag tag-ecuador">La Tri Ecuador #23</span>
+        </div>
+        <h1 class="hero-title">Moisés Isaac <br><span class="highlight-gold">Caicedo Corozo</span></h1>
+        <p class="hero-tagline">
+          "El Niño Moi" &mdash; Dinamismo, despliegue físico, precisión táctica y corazón puro dominando el mediocampo de la Premier League y del fútbol mundial.
+        </p>
+        <div class="hero-actions">
+          <a href="#trayectoria" class="btn btn-primary" aria-label="Ver trayectoria deportiva de Moisés Caicedo">Ver Trayectoria</a>
+          <a href="#estadisticas" class="btn btn-secondary" aria-label="Ver estadísticas clave de rendimiento">Estadísticas Clave</a>
+        </div>
+      </div>
+
+      <div class="hero-image-area">
+        <div class="image-frame">
+          <!-- Fallback visual de respaldo con CSS si la imagen remota no carga -->
+          <div class="image-fallback-placeholder" aria-hidden="true">
+            <div class="fallback-silhouette">
+              <span class="fallback-jersey-number">25</span>
+            </div>
+            <p class="fallback-caption">Moisés Caicedo &bull; Mediocampista</p>
+          </div>
+          <!-- Imagen remota con dimensiones intrínsecas para evitar CLS y carga diferida -->
+          <img 
+            src="https://upload.wikimedia.org/wikipedia/commons/9/9f/Moises_Caicedo_2022.jpg" 
+            alt="Moisés Caicedo, centrocampista internacional ecuatoriano y figura del Chelsea FC" 
+            class="remote-profile-img"
+            width="380"
+            height="460"
+            loading="lazy"
+            decoding="async"
+            onerror="this.classList.add('img-load-error')"
+          >
+        </div>
+        <div class="hero-quick-card">
+          <span class="quick-card-icon" aria-hidden="true">⚽</span>
+          <div>
+            <strong>Pivote / Box-to-Box</strong>
+            <span>Referente Élite Mundial</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contenido principal accesible -->
+  <main id="contenido-principal" tabindex="-1">
+    <!-- Sección Biografía -->
+    <section id="biografia" class="section biografia-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Raíces y Determinación</span>
+          <h2 class="section-title">Biografía de Moisés Caicedo</h2>
+          <div class="decorative-line" aria-hidden="true"></div>
+        </div>
+
+        <div class="bio-grid">
+          <article class="bio-card main-story">
+            <h3>De Santo Domingo para el Mundo</h3>
+            <p>
+              Moisés Isaac Caicedo Corozo nació el <strong>2 de noviembre de 2001</strong> en 
+              <strong>Santo Domingo de los Tsáchilas, Ecuador</strong>. Criado en el humilde barrio Mujer Trabajadora 
+              como el menor de diez hermanos, dio sus primeros toques al balón en canchas de tierra y césped rústico 
+              con el sueño inquebrantable de dar una mejor vida a su familia.
+            </p>
+            <p>
+              Su temple, humildad y descomunal capacidad de recuperación lo llevaron a las formativas de 
+              <strong>Independiente del Valle</strong> a los 13 años. A pesar de superar duras lesiones de rodilla 
+              en su adolescencia, emergió como un líder nato en el mediocampo con una madurez futbolística asombrosa.
+            </p>
+            <p>
+              Hoy en día, Caicedo simboliza el empuje de la juventud ecuatoriana y la consagración de la constancia, 
+              convirtiéndose en el fichaje más cotizado en la historia de la Premier League inglesa y en el motor del 
+              <strong>Chelsea Football Club</strong> y de la <strong>Selección Ecuatoriana de Fútbol</strong>.
+            </p>
+          </article>
+
+          <aside class="bio-quick-facts" aria-label="Ficha técnica de Moisés Caicedo">
+            <h3>Ficha Técnica</h3>
+            <ul class="facts-list">
+              <li>
+                <span class="fact-label">Nombre Completo:</span>
+                <span class="fact-value">Moisés Isaac Caicedo Corozo</span>
+              </li>
+              <li>
+                <span class="fact-label">Nacimiento:</span>
+                <span class="fact-value">2 de noviembre de 2001 (Santo Domingo, Ecuador)</span>
+              </li>
+              <li>
+                <span class="fact-label">Estatura:</span>
+                <span class="fact-value">1,78 m</span>
+              </li>
+              <li>
+                <span class="fact-label">Posición:</span>
+                <span class="fact-value">Mediocentro / Mediocampista central</span>
+              </li>
+              <li>
+                <span class="fact-label">Club Actual:</span>
+                <span class="fact-value">Chelsea FC (Inglaterra)</span>
+              </li>
+              <li>
+                <span class="fact-label">Dorsales:</span>
+                <span class="fact-value">#25 (Chelsea) | #23 (Ecuador)</span>
+              </li>
+              <li>
+                <span class="fact-label">Pie Hábil:</span>
+                <span class="fact-value">Derecho</span>
+              </li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Trayectoria -->
+    <section id="trayectoria" class="section trayectoria-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Carrera Deportiva</span>
+          <h2 class="section-title">Trayectoria de Clubes y Selección</h2>
+          <div class="decorative-line" aria-hidden="true"></div>
+        </div>
+
+        <div class="timeline">
+          <!-- Hito 1: IDV -->
+          <div class="timeline-item">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <span class="timeline-badge">2019 &ndash; 2021</span>
+              <h3>Independiente del Valle &bull; Cuna de Campeones</h3>
+              <p>
+                Debutó profesionalmente en octubre de 2019. Formó parte del plantel campeón de la 
+                <strong>Copa Sudamericana 2019</strong> y fue capitán y figura del equipo que conquistó la 
+                <strong>Copa Libertadores Sub-20 en 2020</strong>, consagrándose como una de las mayores promesas 
+                de Sudamérica.
+              </p>
+            </div>
+          </div>
+
+          <!-- Hito 2: Brighton y Bélgica -->
+          <div class="timeline-item">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <span class="timeline-badge">2021 &ndash; 2023</span>
+              <h3>Brighton &amp; Hove Albion y Beerschot &bull; Salto a Europa</h3>
+              <p>
+                Fichó por el Brighton en febrero de 2021. Tras un fructífero paso a préstamo por el 
+                <strong>K Beerschot VA</strong> de Bélgica, volvió para adueñarse del mediocampo de las Gaviotas en la 
+                Premier League, llevando al club a una histórica clasificación europea y siendo elegido Jugador de la Temporada por sus compañeros.
+              </p>
+            </div>
+          </div>
+
+          <!-- Hito 3: Chelsea FC -->
+          <div class="timeline-item">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-content highlight-card">
+              <span class="timeline-badge chelsea-badge">2023 &ndash; Presente</span>
+              <h3>Chelsea FC &bull; Fichaje Récord en Stamford Bridge</h3>
+              <p>
+                En agosto de 2023 protagonizó el traspaso más valioso en la historia del fútbol británico (115 millones de libras). 
+                En Londres, heredó el legendario dorsal #25 de Gianfranco Zola y se ha erigido en el eje recuperador, constructor y 
+                estratégico del mediocampo 'Blue'.
+              </p>
+            </div>
+          </div>
+
+          <!-- Hito 4: Selección de Ecuador -->
+          <div class="timeline-item">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-content ecuador-card">
+              <span class="timeline-badge ecuador-badge">2020 &ndash; Presente</span>
+              <h3>Selección Absoluta de Ecuador &bull; Pilar de La Tri</h3>
+              <p>
+                Debutó con la selección mayor a los 18 años, siendo el jugador más joven en anotar con Ecuador en Eliminatorias Mundialistas 
+                (ante Uruguay). Disputó la <strong>Copa Mundial de la FIFA Catar 2022</strong>, donde marcó un histórico gol contra Senegal, y es 
+                referente y capitán en las Eliminatorias y la Copa América.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Logros -->
+    <section id="logros" class="section logros-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Palmarés y Reconocimientos</span>
+          <h2 class="section-title">Grandes Logros y Distinciones</h2>
+          <div class="decorative-line" aria-hidden="true"></div>
+        </div>
+
+        <div class="logros-grid">
+          <article class="logro-card">
+            <div class="logro-icon-wrapper gold-border" aria-hidden="true">🏆</div>
+            <div class="logro-info">
+              <h3>Copa Sudamericana 2019</h3>
+              <p class="logro-team">Independiente del Valle</p>
+              <p class="logro-desc">Primer título internacional en su primera etapa en primera división con los 'Rayados del Valle'.</p>
+            </div>
+          </article>
+
+          <article class="logro-card">
+            <div class="logro-icon-wrapper blue-border" aria-hidden="true">🥇</div>
+            <div class="logro-info">
+              <h3>Copa Libertadores Sub-20 2020</h3>
+              <p class="logro-team">Independiente del Valle U20</p>
+              <p class="logro-desc">Capitán, líder y autor de goles clave que catapultaron al equipo a la gloria continental.</p>
+            </div>
+          </article>
+
+          <article class="logro-card">
+            <div class="logro-icon-wrapper red-border" aria-hidden="true">🌍</div>
+            <div class="logro-info">
+              <h3>Gol en Copa Mundial FIFA 2022</h3>
+              <p class="logro-team">Selección de Ecuador</p>
+              <p class="logro-desc">Anotador mundialista con tan solo 21 años, escribiendo su nombre en los libros de oro de La Tri.</p>
+            </div>
+          </article>
+
+          <article class="logro-card">
+            <div class="logro-icon-wrapper chelsea-border" aria-hidden="true">⭐</div>
+            <div class="logro-info">
+              <h3>Récord de Transferencia Británica</h3>
+              <p class="logro-team">Brighton a Chelsea FC</p>
+              <p class="logro-desc">La transferencia más alta en la historia de la Premier League británica (£115 millones en 2023).</p>
+            </div>
+          </article>
+
+          <article class="logro-card">
+            <div class="logro-icon-wrapper gold-border" aria-hidden="true">🎖️</div>
+            <div class="logro-info">
+              <h3>Jugador del Año de los Futbolistas</h3>
+              <p class="logro-team">Brighton &amp; Hove Albion (2022-23)</p>
+              <p class="logro-desc">Elegido por sus propios compañeros como el elemento más determinante de toda la campaña.</p>
+            </div>
+          </article>
+
+          <article class="logro-card">
+            <div class="logro-icon-wrapper blue-border" aria-hidden="true">🎯</div>
+            <div class="logro-info">
+              <h3>Gol de la Temporada Chelsea FC</h3>
+              <p class="logro-team">Chelsea FC (2023-24)</p>
+              <p class="logro-desc">Inolvidable golazo desde la mitad de la cancha contra Bournemouth premiado como el mejor del año.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Estadísticas -->
+    <section id="estadisticas" class="section estadisticas-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Rendimiento en la Cancha</span>
+          <h2 class="section-title">Estadísticas e Impacto Táctico</h2>
+          <div class="decorative-line" aria-hidden="true"></div>
+        </div>
+
+        <div class="stats-overview">
+          <div class="stat-box">
+            <span class="stat-number">+89%</span>
+            <span class="stat-label">Precisión de Pases</span>
+            <span class="stat-sub">Distribución limpia bajo presión</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-number">Top 3%</span>
+            <span class="stat-label">Entradas y Quites</span>
+            <span class="stat-sub">En mediocampistas de Europa</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-number">+50</span>
+            <span class="stat-label">Partidos con La Tri</span>
+            <span class="stat-sub">Consagrado en Eliminatorias y Mundial</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-number">11.4 km</span>
+            <span class="stat-label">Distancia / Partido</span>
+            <span class="stat-sub">Promedio de despliegue en Premier</span>
+          </div>
+        </div>
+
+        <div class="metrics-comparison">
+          <div class="metric-card">
+            <h3>Fortalezas Tácticas</h3>
+            <div class="skill-bar">
+              <div class="skill-info">
+                <span id="label-skill-recuperacion">Recuperación e Intercepciones</span>
+                <span aria-hidden="true">95%</span>
+              </div>
+              <div class="progress-track" role="progressbar" 
+                   aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"
+                   aria-labelledby="label-skill-recuperacion"
+                   aria-label="Recuperación e Intercepciones: 95%">
+                <div class="progress-fill" style="width: 95%;"></div>
+              </div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-info">
+                <span id="label-skill-resistencia">Resistencia y Despliegue Físico</span>
+                <span aria-hidden="true">94%</span>
+              </div>
+              <div class="progress-track" role="progressbar" 
+                   aria-valuenow="94" aria-valuemin="0" aria-valuemax="100"
+                   aria-labelledby="label-skill-resistencia"
+                   aria-label="Resistencia y Despliegue Físico: 94%">
+                <div class="progress-fill" style="width: 94%;"></div>
+              </div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-info">
+                <span id="label-skill-pases">Pases Progresivos</span>
+                <span aria-hidden="true">88%</span>
+              </div>
+              <div class="progress-track" role="progressbar" 
+                   aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"
+                   aria-labelledby="label-skill-pases"
+                   aria-label="Pases Progresivos: 88%">
+                <div class="progress-fill" style="width: 88%;"></div>
+              </div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-info">
+                <span id="label-skill-duelos">Duelos en el Suelo Ganados</span>
+                <span aria-hidden="true">91%</span>
+              </div>
+              <div class="progress-track" role="progressbar" 
+                   aria-valuenow="91" aria-valuemin="0" aria-valuemax="100"
+                   aria-labelledby="label-skill-duelos"
+                   aria-label="Duelos en el Suelo Ganados: 91%">
+                <div class="progress-fill" style="width: 91%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="quote-card">
+            <div class="quote-mark" aria-hidden="true">“</div>
+            <blockquote class="quote-text">
+              "Juego siempre con el corazón por mi familia, por mi país Ecuador y por este escudo. En cada pelota dividida dejo el alma."
+            </blockquote>
+            <cite class="quote-author">&mdash; Moisés Caicedo Corozo</cite>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Pie de página -->
+  <footer class="main-footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <div class="flag-stripe-banner" aria-hidden="true">
+          <span class="flag-stripe yellow"></span>
+          <span class="flag-stripe blue"></span>
+          <span class="flag-stripe red"></span>
+        </div>
+        <p class="footer-title">Moisés Caicedo &bull; Orgullo Ecuatoriano &amp; Motor Blue</p>
+        <p class="footer-desc">Página tributo al futbolista ecuatoriano del Chelsea FC y de la Selección de Ecuador.</p>
+      </div>
+      <div class="footer-info">
+        <p>&copy; 2026 Tributo Deportivo &bull; Diseñado con pasión Tricolor y espíritu de Stamford Bridge.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Respaldo sin JS para navegación móvil -->
+  <noscript>
+    <style>
+      .nav-toggle { display: none !important; }
+      .nav-menu { max-height: none !important; position: static !important; padding: 0.5rem 0 !important; }
+      .nav-links { flex-direction: row !important; flex-wrap: wrap !important; justify-content: center !important; }
+    </style>
+  </noscript>
+
+  <!-- Script ligero y accesible sin frameworks -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Control de menú de navegación móvil accesible
+      const navToggle = document.querySelector('.nav-toggle');
+      const navMenu = document.querySelector('.nav-menu');
+      const navLinks = document.querySelectorAll('.nav-links a');
+
+      function closeMenu() {
+        if (navToggle && navMenu) {
+          navToggle.setAttribute('aria-expanded', 'false');
+          navToggle.setAttribute('aria-label', 'Abrir menú de navegación');
+          navMenu.classList.remove('is-open');
+        }
+      }
+
+      function openMenu() {
+        if (navToggle && navMenu) {
+          navToggle.setAttribute('aria-expanded', 'true');
+          navToggle.setAttribute('aria-label', 'Cerrar menú de navegación');
+          navMenu.classList.add('is-open');
+        }
+      }
+
+      if (navToggle && navMenu) {
+        navToggle.addEventListener('click', () => {
+          const isExpanded = navToggle.getAttribute('aria-expanded') === 'true';
+          if (isExpanded) {
+            closeMenu();
+          } else {
+            openMenu();
+          }
+        });
+
+        // Cerrar menú con tecla Escape
+        document.addEventListener('keydown', (e) => {
+          if (e.key === 'Escape' && navToggle.getAttribute('aria-expanded') === 'true') {
+            closeMenu();
+            navToggle.focus();
+          }
+        });
+
+        // Cerrar menú al presionar cualquier enlace interno
+        navLinks.forEach(link => {
+          link.addEventListener('click', () => {
+            closeMenu();
+          });
+        });
+      }
+
+      // Permitir activación con barra espaciadora en enlaces estilizados como botones
+      document.querySelectorAll('a.btn').forEach(btn => {
+        btn.addEventListener('keydown', (e) => {
+          if (e.key === ' ' || e.code === 'Space') {
+            e.preventDefault();
+            btn.click();
+          }
+        });
+      });
+
+      // Indicador dinámico de sección activa mediante IntersectionObserver (WCAG 2.4.8)
+      const sections = document.querySelectorAll('section[id]');
+      if ('IntersectionObserver' in window && sections.length > 0) {
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              const currentId = entry.target.getAttribute('id');
+              navLinks.forEach(link => {
+                const href = link.getAttribute('href');
+                if (href === `#${currentId}`) {
+                  link.classList.add('active');
+                  link.setAttribute('aria-current', 'true');
+                } else {
+                  link.classList.remove('active');
+                  link.removeAttribute('aria-current');
+                }
+              });
+            }
+          });
+        }, {
+          threshold: 0.25,
+          rootMargin: '-70px 0px -40% 0px'
+        });
+
+        sections.forEach(sec => observer.observe(sec));
+      }
+    });
+  </script>
+</body>
+</html>
